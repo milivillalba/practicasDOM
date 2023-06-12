@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 10;
+  font-family: "Oswald", sans-serif;
+}
+h1 {
+  color: black !important;
+}
+
+h2 {
+  color: rgb(0, 0, 0) !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+}
+body {
+  background-color: rgb(181, 45, 95) !important;
+}
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0), 0 0 50px rgb(0, 0, 0),
+    0 0 100px rgb(0, 0, 0);
+  color: white !important;
+}
+button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.cardContainer {
+  margin: 100px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  outline: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cardText {
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+}
+
+@media (max-width: 300px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 300px) {
+  .cardContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
